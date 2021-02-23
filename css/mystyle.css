@@ -1,0 +1,469 @@
+
+/* ---------------
+   全体のレイアウト
+----------------*/
+.h-container,
+.f-container {
+  width: 95%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+@media screen and (min-width:599px) {
+  .h-container,
+  .m-container,
+  .s-container,
+  .f-container {
+    width: 90%;
+  }
+}
+
+@media screen and (min-width:959px) {
+  /*横に並べる*/
+  .wrapper {
+    display: flex;
+	width: 85%;
+  }
+  .s-container {
+    flex: 0 0 300px;
+	margin: 0 auto;
+	padding: 3%;
+    order: 2;
+  }
+  .m-container {
+    flex: 1 1 auto;
+    order: 1;
+  }
+}
+
+h2 {
+	margin-top: 100px;
+}
+h3 {
+	margin-top: 50px;
+}
+h4 {
+	margin-top: 30px;
+}
+
+/* パディングの設定 */
+.h-container,
+.m-container,
+/*.s-container, */
+.f-container {
+  padding: 0 2% 2%;
+}
+
+/* -------------
+   共通のスタイル
+---------------*/
+
+/* フォントサイズ設定 */
+body {
+  color: #444;
+  background: #fff;
+  font-size: 15px; /* 全体の文字サイズ */
+  font-family: "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;  /*フォント種類*/
+  line-height: 2;     /*行間*/
+}
+@media screen and (min-width:959px) {
+  .h-container,
+  .m-container,
+  .f-container {
+    font-size: 1.2rem;
+  }
+}
+
+/* link a */
+a:link {
+  font-weight: bold;/*太字*/
+}
+a:visited { /* すでに見たリンク */
+  color: #999;
+  background: #fff;
+}
+a:hover {
+  color: #ff6600;
+  background: #fff;
+  text-decoration: none;
+  font-weight: bold;/*太字*/
+}
+a:active { /* クリックした時 */
+  color: #ff6600;
+  background: #fff;
+}
+
+em { /* 強調表示 */
+  font-style: normal;
+  font-weight: bold;
+}
+strong { /*　重要表示　*/
+  font-weight: bold;
+  text-decoration: underline;
+  color: Red;
+  background: white
+}
+.yellow {
+  color: yellow;
+}
+.bg-white {
+  background: white;
+  color: #000;
+  padding: 0 2%;
+}
+/*コード表示装飾*/
+.mycode{
+  background: #000;
+  color: #fff;
+  padding: 1%;
+  overflow: auto;
+}
+
+/* table */
+table {
+  overflow: scroll;
+  white-space:nowrap;
+}
+table, th, td {
+  border: 1px solid #a9a9a9;
+  border-collapse: collapse;
+}
+th, td {
+  padding:0.5em
+}
+thead {
+  background-color: #ff9999;
+}
+tfoot {
+  font-size: smaller;
+  text-align: right;
+}
+.mark1::before {
+  content: url("../img/mark1.png");
+}
+
+/* -------------
+   背景色・背景画像
+---------------*/
+
+/* ボックスの背景設定 */
+body {
+  background-color: #fff;
+}
+
+.f-container {
+  background-color: #007b00;
+}
+
+
+/* -------------
+   ヘッダー
+---------------*/
+#site-intro {
+  line-height: 1;
+}
+
+/* .site-branding */
+.title-logo {
+  width: 40%;
+  margin: 0 auto;
+}
+
+.site-title {
+  font-size: 2.2em;
+  font-weight: bold;
+  text-align: center;
+  line-height: 1;
+}
+.site-title a {
+  text-decoration: none;
+  color: #000;
+}
+
+@media screen and (min-width:599px) {
+  /* .site-branding */
+  .title-logo {
+    margin: 0 -10% 0 10%;
+    /* width: 50%: */
+  }
+  .title-logo img {
+    width: 70%;
+  }
+  .site-branding {
+    display: flex;
+    align-items: flex-end;
+  }
+
+  .site-title {
+    /* margin-top: 50px; */
+    margin-left: -50px;
+    padding-bottom: 50px;
+  }
+}
+
+/* h-nav */
+.h-nav {
+  list-style-type: none;
+  text-align: center;
+  margin-left: -30px;
+}
+
+.h-nav li a {
+  display: block;
+}
+
+.h-container nav {
+  border: ridge 10px #ffa500;
+}
+
+.h-nav a {
+  display: block;
+}
+@media screen and (min-width:599px) {
+  .h-nav {
+    display: flex;
+    justify-content: space-around;
+  }
+  .h-nav li {
+    width: 150px;
+  }
+}
+
+/* パンくずリスト */
+.breadcrumb {
+  margin-left: -30px;
+}
+.breadcrumb li {
+  display: inline;/*横に並ぶように*/
+  list-style: none;
+}
+.breadcrumb li:after {/* >を表示*/
+  content: 'to';
+  padding: 0 0.2em;
+  color: #555;
+}
+.breadcrumb li:last-child:after {
+  content: '';
+}
+
+/* 見出し１ */
+h1 {
+  color: #fff;
+  text-align: center;
+  font-size: 1.6rem;
+  margin-top: 60px;
+  margin-bottom: 30px;
+  padding: 4%;
+  background-color: #007b00;
+  border-radius: 10%;
+  border: solid 10px #ffa500;
+}
+
+@media screen and (min-width:599px) {
+  h1 {
+    margin: 0 20%;
+    padding: 2%;
+  }
+}
+
+/* -------------
+   メインコンテンツ
+---------------*/
+.m-container h2 {
+  margin-bottom: 30px;
+  text-decoration: underline;
+}
+
+/* article */
+.arti {
+  margin: 30px 0;
+}
+.arti h3 {
+  margin-left: 2%;
+}
+.img-wide {
+  width: 80%;
+  height: auto;
+  margin: 0 auto;
+}
+.arti .text {
+  margin: 1% 3%;
+}
+.m-container p img {
+  margin: 0 auto;
+}
+.yellow-black {
+  color: Black;
+  background: Yellow;
+}
+.l-space1 {
+  letter-spacing: 1em;
+}
+
+
+/* -------------
+   サイドコンテンツ
+---------------*/
+.s-container {
+  margin-bottom: 80px;
+}
+
+.s-container figure {
+  padding: 5%;
+}
+.s-container img {
+  margin: 0 auto;
+}
+
+#profile img {
+  margin: 0 auto;
+  width: 50%;
+  max-width: 200px;
+}
+
+/* snsボタン共通 */
+.snsbtn li a {
+  font-family: 'Verdana',sans-serif;
+  border-radius: 4px;
+  display: inline-block;
+  width: 100%;
+  font-size: 1.2em;
+  text-align: center;
+  transition: .4s;
+  text-decoration: none;
+}
+.snsbtn li a:hover {
+  color: #fff;
+  text-decoration: none;
+}
+
+/* Twitter */
+.fl_tw2 {
+  border: solid 1px #55acee;
+  color: #55acee;
+}
+/* Twitterマウスホバー時 */
+.fl_tw2:hover {
+  border: solid 1px #55acee;
+  background: #55acee;
+}
+/* Instagram */
+.insta_btn2 {
+  border: solid 1px #c6529a;
+  color: #c6529a;
+}
+/* Instagramマウスホバー時 */
+.insta_btn2:hover {
+  border: solid 1px #c6529a;
+  background: #c6529a;
+}
+/* Facebook */
+.fl_fb2 {
+  border: solid 1px #3b5998;
+  color: #3b5998;
+}
+/* Facebookマウスホバー時 */
+.fl_fb2:hover {
+  border: solid 1px #3b5998;
+  background: #3b5998;
+}
+/* Feedly */
+.fl_fd2 {
+  border: solid 1px #6cc655;
+  color: #6cc655;
+}
+/* Feedlyマウスホバー時 */
+.fl_fd2:hover {
+  border: solid 1px #6cc655;
+  background: #6cc655;
+}
+/* Pocket */
+.fl_pk2 {
+  border: solid 1px #ef3f56;
+  color: #ef3f56;
+}
+/* Pocketマウスホバー時 */
+.fl_pk2:hover {
+  border: solid 1px #ef3f56;
+  background: #ef3f56;
+}
+/* はてブ */
+.fl_hb2 {
+  border: solid 1px #1ba5dc;
+  color: #1ba5dc;
+}
+/* はてブマウスホバー時 */
+.fl_hb2:hover {
+  border: solid 1px #1ba5dc;
+  background: #1ba5dc;
+}
+/* YouTube */
+.fl_yu2 {
+  border: solid 1px #fc0d1c;
+  color: #fc0d1c;
+}
+/* YouTubeマウスホバー時 */
+.fl_yu2:hover {
+  border: solid 1px #fc0d1c;
+  background: #fc0d1c;
+}
+/* LINE */
+.fl_li2 {
+  border: solid 1px #00c300;
+  color: #00c300;
+}
+/* LINEマウスホバー時 */
+.fl_li2:hover {
+  border: solid 1px #00c300;
+  background: #00c300;
+}
+/* メールアイコン */
+.fl_ma2 {
+  border: solid 1px #f3981d;
+  color: #f3981d;
+}
+/* メールアイコンマウスホバー時 */
+.fl_ma2:hover {
+  border: solid 1px #f3981d;
+  background: #f3981d;
+}
+
+
+/* -------------
+   フッターコンテンツ
+---------------*/
+.f-container {
+  margin-top: 50px;
+  color: #fff;
+}
+
+/* fnav */
+.fnav {
+  margin: 0 auto;
+  padding-left: 20px;
+}
+.fnav a {
+  display: block;
+}
+.f-container a:hover {
+  color: #fff;
+  background: #007b00;
+}
+@media screen and (min-width:599px) {
+  .fnav {
+    display: flex;
+    justify-content: space-around;
+    text-align: left;
+  }
+}
+
+/* .copyright_etc */
+.copyright_etc {
+  text-align: right;
+}
+.copyright_etc a {
+  /* color: #000; */
+}
+small {
+  display: block;
+  font-weight: bold;
+}
