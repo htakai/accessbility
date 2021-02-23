@@ -1,0 +1,1187 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>誰でも利用しやすいウェッブサイト製作｜トップページ</title>
+<link rel="stylesheet" href="css/reset.css">
+<link rel="stylesheet" href="css/mystyle.css">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
+<style>
+body{
+    padding: 5%;
+    }
+#skip a
+{
+position:absolute;
+left:-10000px;
+top:auto;
+width:1px;
+height:1px;
+overflow:hidden;
+}
+
+#skip a:focus
+{
+position:static;
+width:auto;
+height:auto;
+}
+
+a:hover, input:hover, button:hover, select:hover,
+      a:focus, input:focus, button:focus, select:focus {
+        font-weight: bold;
+      }
+form {
+  padding: 5%;
+}
+button {
+    margin: 2%;
+}
+
+.errors2, .errors3 {
+    color: red;
+    font-weight: bold;
+    padding: 1%;
+    width: 90%;
+    position: fixed;
+    left: -2000px;
+}
+#confirm, #confirm3 {
+    font-weight: bold;
+    list-style: none;
+    padding: 1%;
+    width: 300px;
+    border-radius: 20px;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+.sliderbox {
+    text-align: center;
+}
+.sliderbox img {
+    display: block;
+    margin: 0 auto;
+    width: 80%;
+    max-width: 640px;
+}
+/* フェードイン */
+.fade-in {
+   opacity: 0;
+   animation-name: fade-in;
+   animation-duration: 8s;
+   animation-timing-function: ease-out;
+/* animation-direction: nomal; */
+   animation-fill-mode: none;
+   animation-iteration-count: infinite;
+}
+@keyframes fade-in {
+   0% {
+      opacity: 0;
+      transform: translateX(0);
+   }
+   100% {
+      opacity: 1;
+      transform: translateX(0);
+   }
+}
+.imgframe {
+    margin: 0 auto;
+    border: solid 1px #000;
+}
+</style>
+</head>
+<body>
+  <!-- ヘッダ -->
+  <header class="h-container">
+    <p id="site-intro">誰でも利用しやすいウェッブサイト製作について考えるサイト</p>
+    <div id="skip"><a href="#content">Skip to Main Content</a></div>
+    <div class="site-branding">
+    <div class="title-logo">
+      <a href="#"><img src="./img/logo.png" alt="about logo"></a>
+    </div>
+    <p class="site-title">
+      <a href="#">優しいウェブ製作</a>
+    </p>
+    </div>
+
+    <nav>
+      <ul class="h-nav">
+        <li><a href="index.html">トップページ</a></li>
+        <li><a href="contents1.html">コーディング</a></li>
+        <li><a href="contents2.html">contents2</a></li>
+        <li><a href="contents3.html">contents3</a></li>
+        <li><a href="contents4.html">contents4</a></li>
+      </ul>
+    </nav>
+    <!-- パンくずリスト -->
+    <div class="breadcrumb" id="content" aria-label="breadcrumb">
+      <ol itemscope itemtype="https://schema.org/BreadcrumbList">
+        <!-- 1つめ -->
+        <li itemprop="itemListElement" itemscope
+          itemtype="https://schema.org/ListItem">
+          <a itemprop="item" href="https://mydomain/">
+            <span itemprop="name">ホーム</span>
+          </a>
+          <meta itemprop="position" content="1" />
+        </li>
+        <!-- 2つめ -->
+        <li itemprop="itemListElement" itemscope
+          itemtype="https://schema.org/ListItem" aria-current="page">
+          <a itemprop="item" href="https://mydomain/contents1.html/">
+            <span itemprop="name">コーディング</span>
+          </a>
+          <meta itemprop="position" content="2" />
+        </li>
+      </ol>
+    </div><!-- パンくずリストend -->
+    <!-- 見出し1 -->
+    <h1>人に優しいコーディングとは</h1>
+  </header><!-- ヘッダend -->
+
+  <!-- ラッピング -->
+  <div class="wrapper">
+    <!-- メインコンテンツ -->
+    <div class="m-container">
+      <main role="main">
+        <section>
+          <h2>見やすい、理解しやすいページになっていること</h2>
+          <article class="arti">
+            <h3>標準である、html5仕様にそって、html文を作成する。</h3>
+            <p>html5において、 テキストに構造と意味 (セマンティクスともいう) の要素が強化されました。</p>
+            <p>html5では、各要素タグがコンテンツモデルとして定義されております。</p>
+            <p>コンテンツモデルとは、要素を、メタデータ、フロー、セクション、ヘッディング、フレージング、エンベッディッド、インタラクティブというコンテンツの種類 に分類し、定義したものです。</p>
+            <p>最新のブラウザやスクリーンリーダーはこの仕様に沿って表示、発声することになっています。正しいタグづけをすることによって、適切に機能することを保障するものと思われます。</p>
+          </article>
+          <article class="arti">
+            <h3>何を伝えたいか理解できる。</h3>
+            <p>ウェブページのデザイン性がどんなに優れていても、内容が閲覧者に正しく伝われなければ、目的が達成されているとはいえないと思われる。</p>
+            <p>htmlタグでマークアップされたセマンティックな部分は、あくまでも着飾ったものであって、その核となるのはテキスト或いは画像であります。</p>
+            <p>そのためにも、マークアップする前にテキスト（或いは画像を含む）の状態で、十分に作りこむことが大切であると考えます。</p>
+          </article>
+        </section>
+
+        <section>
+          <h2>誰でも見れるようにするためのhtmlコーディング実例</h2>
+          <h3>画像・図表には代替テキストを入れる。</h3>
+          <p><img src="./img/_17531bluebottle.png" alt="幸せを呼ぶブルーボトル" title="幸せを呼ぶブルーボトル">
+          </p>
+          <pre class="mycode"><code><span class="yellow">代替テキスト「alt」属性を入れる。</span>
+<span class="bg-white">html</span>
+&lt;p&gt;&lt;img src=&quot;./img/_17531bluebottle.png&quot; alt=&quot;幸せを呼ぶブルーボトル&quot; title=&quot;幸せを呼ぶブルーボトル&quot;&gt;&lt;/p&gt;</code></pre>
+          <p>alt属性に画像内容をテキストとして示すことにより、画像が表示されなかった場合の代替表示をします。音声認識ソフトでは、alt属性の内容が発音されます。title属性はツールチップ（カーソルを近づけたときのtitleの内容が表示される。）として機能します。
+          </p>
+
+          <h3>アイコンや罫線などデザイン目的の画像にはスクリーンリーダへの適切な配慮をする。</h3>
+          <p class="mark1">下記の画像はアクセントデザイン目的で使用しています。</p>
+          <p><img src="img/accent1.png" alt=""></p>
+          <pre class="mycode"><code><span class="yellow">ページ内で何回も使われるアイコンはcssファイル内で擬似要素として定義します。
+アクセントデザイン目的の画像の代替テキストは、alt=""とします。</span>
+<span class="bg-white">html</span>
+&lt;p class=&quot;mark1&quot;&gt;下記の画像はアクセントデザイン目的で使用しています。&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;img/accent1.png&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
+<span class="bg-white">css</span>
+.mark1::before {
+  content: url(&quot;../img/mark1.png&quot;);
+}</code></pre>
+          <p>デザイン目的だけの画像、たとえば、アイコンや区切り画像などはalt title属性にコメントを入れる必要はありません。</p>
+          <p>但し、alt属性は省略すべきではありません。スクリーンリーダがalt属性がない場合にはファイル名を読み上げてしまうことがあり、聞き心地を損ねてしまうからとされております。。</p>
+          <h3>タグで適切な論理構造として示し、スタイルシートで装飾をする。</h3>
+          <p><em>強調を示すタグ</em>は下記のものがあります。</p>
+          <ul>
+            <li> <b>b</b> 単なる太字テキスト表示</li>
+            <li> <b>em</b> 強調であることを示す</li>
+            <li> <b>strong</b> 重要であることを示す</li>
+          </ul>
+          <p>これらのタグは見た目は同じような表示になることが多いですが、<strong>タグの役割を理解した上で</strong>使用することが望まれます。<em>表示装飾の差別化は、スタイルシートを使って示します。</em></p>
+          <pre class="mycode"><code><span class="yellow">タグの適切な使用により、スクリーンリーダでの理解しやすい音声発信につながると期待されます</span>
+&lt;!-- 推奨 --&gt;
+<span class="bg-white">html</span>
+&lt;p&gt;&lt;em&gt;強調を示すタグ&lt;/em&gt;は下記のものがあります。&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt; &lt;b&gt;b&lt;/b&gt; 単なる太字テキスト表示&lt;/li&gt;
+  &lt;li&gt; &lt;b&gt;em&lt;/b&gt; 強調であることを示す&lt;/li&gt;
+  &lt;li&gt; &lt;b&gt;strong&lt;/b&gt; 重要であることを示す&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;これらのタグは見た目は同じような表示になることが多いですが、&lt;strong&gt;タグの役割を理解した上で&lt;/strong&gt;使用することが望まれます。&lt;em&gt;表示装飾の差別化は、スタイルシートを使って示します。&lt;/em&gt;&lt;/p&gt;
+<span class="bg-white">css</span>
+em { /* 強調表示 */
+  font-style: normal;
+  font-weight: bold;
+}
+strong { /*　重要表示　*/
+  font-weight: bold;
+  text-decoration: underline;
+  color: Red;
+  background: white
+}
+
+&lt;!-- 非推奨 --&gt;
+<span class="bg-white">html</span>
+&lt;p&gt;&lt;b&gt;強調を示すタグ&lt;/b&gt;は下記のものがあります。&lt;/p&gt;
+&lt;div&gt;
+  &lt;p&gt; ・ &lt;b&gt;b&lt;/b&gt; 単なる太字テキスト表示&lt;br&gt;
+      ・ &lt;b&gt;em&lt;/b&gt; 強調であることを示す&lt;br&gt;
+      ・ &lt;b&gt;strong&lt;/b&gt; 重要であることを示す
+  &lt;/p&gt;
+  &lt;p&gt;これらのタグは見た目は同じような表示になることが多いですが、&lt;b class=&quot;_important&quot;&gt;タグの役割を理解した上で&lt;/b&gt;使用することが望まれます。&lt;b&gt;表示装飾の差別化は、スタイルシートを使って示します。&lt;/b&gt;&lt;/p&gt;
+<span class="bg-white">css</span>
+._important {
+  font-weight: bold;
+  text-decoration: underline;
+  color: Red;
+  background: white
+}</code></pre>
+          <p>これ以外にもsmallタグ<small>著作権表示</small>や、kbdタグ（<kbd>Backspace</kbd>）などhtml文の表示目的を表すタグの適切使用により、アクセスビリティ向上に期待が持てるようになります。</p>
+          <h3>リンクであること、リンク先がどこであるか明確に示す。</h3>
+          <p><a href="https://yasashii.net/wp4/">優しい情報サイト</a></p>
+          <pre class="mycode"><code><span class="yellow">リンク装飾はデフォルト（アンダーラインつき青色文字色）にし、リンク先の名称を示す</span>
+<span class="bg-white">html</span>
+&lt;p&gt;&lt;a href=&quot;https://yasashii.net/wp4/&quot;&gt;優しい情報サイト&lt;/a&gt;&lt;/p&gt;
+<span class="yellow"></span>
+<span class="bg-white">css</span>
+a:link {
+  font-weight: bold;/*太字*/
+}
+a:visited { /* すでに見たリンク */
+  color: #999;
+  background: #fff;
+}
+a:hover {　/* マウスポインターが乗った */
+  color: #ff6600;
+  background: #fff;
+  text-decoration: none;
+  font-weight: bold;/*太字*/
+}
+a:active { /* クリックした時 */
+  color: #ff6600;
+  background: #fff;
+}</code></pre>
+          <p>リンク先がどういうところなのかを明確に示す必要があります。</p>
+          <p>リンク動作にかかわる擬似要素も必要に応じて指定する。但し、記述の順番は上記のように記述しないとスjタイルがうまく適用されない場合があります。</p>
+          <p>リンクはユーザがマウスを近づける、クリックする、などの動作を伴います。</p>
+          <p>このような動作にたいして、表示画面に変化を加えることは、「気づき」という点では有用なものと思われます。</p>
+          <h3>リンクのクリック先を新しいウィンドウにすることを避ける。</h3>
+          <p><a href="https://yasashii.net/wp4/" target="_blank">優しい情報サイト</a></p>
+          <pre class="mycode"><code><span class="yellow">リンクをクリックしてしまうと新しいタブまたは新しいウィンドウが開いてしまう。</span>
+<span class="bg-white">html</span>
+&lt;!-- 非推奨 --&gt;
+&lt;a href=&quot;https://yasashii.net/wp4/&quot; target=&quot;_blank&quot;&gt;優しい情報サイト&lt;/a&gt;</code></pre>
+          <p>目が見えない人にとっては、新しいウィンドウが開いても気づかない場合があります。なるべくリンクのブランク属性は避ける必要があります</p>
+
+          <h3>適切なテキスト表現をする。</h3>
+          <h4>文字色設定は、文字背景色設定とセットで行います。</h4>
+          <p class="yellow-black">ブラウザの文字色、あるいは背景色のデフォルト設定がそれぞれ白、黒とは限らないので、文字そのもののコントラスト比を大きく保つように文字色と文字背景色はセットで設定します。
+          </p>
+          <pre class="mycode"><code>
+<span class="bg-white">html</span>
+&lt;p class=&quot;yellow-black&quot;&gt;ブラウザの文字色、あるいは背景色のデフォルト設定がそれぞれ白、黒とは限らないので、文字そのもののコントラスト比を大きく保つように文字色と文字背景色はセットで設定します。
+&lt;/p&gt;
+<span class="bg-white">css</span>
+.yellow-black {
+  color: Black;
+  background: Yellow;
+}
+</code></pre>
+          <h4>文字列の中の記号文字表記（- / :）が音声としてどのように読まれるのか考えて使用する。</h4>
+          <p><time datetime="2020-11-11">2020-11-11 10:22</time>&lt;!-- 非推奨表記  --&gt;</p>
+          <p><time datetime="2020-11-11">2020年11月11日10時22分</time>&lt;!-- 推奨表記  --&gt;</p>
+          <pre class="mycode"><code><span class="yellow">- / :　はスクリーンリーダでは、マイナス　スラッシュ　コロンと読まれ、意味がわからなくなる。</span>
+&lt;time datetime=&quot;2020-11-11&quot;&gt;2020-11-11 10:22&lt;/time&gt; &lt;!-- 非推奨表記 --&gt;
+&lt;time datetime=&quot;2020-11-11&quot;&gt;2020年11月11日10時22分&lt;/time&gt;  &lt;!-- 推奨表記  --&gt;</code></pre>
+          <h3>単語・文の区切りは明確にする。</h3>
+          <p>住　所　:  東京都足立区&lt;!-- 非推奨表記  --&gt;</p>
+          <p><span class="l-space1">住所</span>:  東京都足立区&lt;!-- 推奨表記  --&gt;</p>
+          <pre class="mycode"><code><span class="yellow">単語の文字の間に体裁を整える為に空白文字を入れてはいけない。この場合は、スタイルシートでスタイリングする</span>
+&lt;!-- 非推奨 --&gt;
+<span class="bg-white">html</span>
+&lt;p&gt;住　所　:  東京都足立区&lt;/p&gt;
+&lt;!-- 推奨 --&gt;
+<span class="bg-white">html</span>
+&lt;p&gt;&lt;span class=&quot;l-space1&quot;&gt;住所&lt;/span&gt;:  東京都足立区&lt;/p&gt;
+<span class="bg-white">css</span>
+.l-space1 {
+  letter-spacing: 1em;
+}</code></pre>
+          <h4>機種依存文字はテキストエンコーディングutf-8で使用する。</h4>
+          旧態のブラウザではShift_jisやEUC-JPなどの文字コードが標準で設定されていました。このような状況の下ではブラウザの違いによって機種依存文字（①、Ⅰ、∑など）は見え方が異なってしまうことになり、アクセスビリティを考えると使用すべきではないとされていました。今では、こうした問題も、国際化対応のユニコードutf-8が標準で使われており、考慮しないで済むようになっています。但し、文字化けしてしまうとか、イメージと違う表示になってしまうなどの問題がでてきた場合は、文字コードの設定を疑ってみる必要があります。</p>
+          <h4>点滅・移動させるような表示の仕方はしない。</h4>
+          <p>携帯サイトでよく使われていた、文字を点滅させるBLINKタグと文字を移動させるMARQUEEタグは対応機種が限られており、使うべきではないとされております。視覚障害の人には、このようなタグが使われている画面を読み取ることが困難であったり、音声読み上げされません。html5においても、廃止タグとなっております。</p>
+          <h3>テーブル文の構成は先頭から順番に内容が通じるように作る。</h3>
+          <table>
+            <caption>
+              <strong>お米の品種について？その長所と短所</strong>
+            </caption>
+            <thead>
+              <tr><th>品種名</th><th>長所</th><th>短所</th></tr>
+            </thead>
+            <tbody>
+              <tr><th>こしひかり</th><td>食味が良い</td><td>倒伏しやすく栽培がむずかしい</td></tr>
+              <tr><th>あきたこまち</th><td>こしひかりより栽培期間が短い</td><td>炊飯後時間がたつと食味がおちる</td></tr>
+            </tbody>
+            <tfoot>
+              <tr><td colspan="3">2020年度見解</td></tr>
+            </tfoot>
+          </table>
+          <pre class="mycode"><code><span class="yellow">左から右に、上から下にテキストが読まれ、意味が通じるようにする。</span>
+<span class="bg-white">html</span>
+&lt;table&gt;
+  &lt;caption&gt;
+    &lt;strong&gt;お米の品種について？その長所と短所&lt;/strong&gt;
+  &lt;/caption&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;&lt;th&gt;品種名&lt;/th&gt;&lt;th&gt;長所&lt;/th&gt;&lt;th&gt;短所&lt;/th&gt;&lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;&lt;th&gt;こしひかり&lt;/th&gt;&lt;td&gt;食味が良い&lt;/td&gt;&lt;td&gt;倒伏しやすく栽培がむずかしい&lt;/td&gt;&lt;/tr&gt;
+    &lt;tr&gt;&lt;th&gt;あきたこまち&lt;/th&gt;&lt;td&gt;こしひかりより栽培期間が短い&lt;/td&gt;&lt;td&gt;炊飯後時間がたつと食味がおちる&lt;/td&gt;&lt;/tr&gt;
+  &lt;/tbody&gt;
+  &lt;tfoot&gt;
+    &lt;tr&gt;&lt;td colspan=&quot;3&quot;&gt;2020年度見解&lt;/td&gt;&lt;/tr
+  &lt;/tfoot&gt;
+&lt;/table&gt;</code></pre>
+          <p>テーブルにcaptionをつけると、スクリーンリーダーが読み上げてくれます。</p>
+          <h3>障害者にも使いやすい送信フォームになっている</h3>
+          <p><a href="#sendform">フォーム送信</a>を参照してください</p>
+          <h3>障害を持っている人に対する色使いへの配慮をする。</h3>
+          <p>テキスト（前景）と背景色の組み合わせのコントラストは、色覚異常者にとっては、アクセスビリティの重要な要素になっています。各色の組み合わせのコントラスト比が高いほど、みえやすくなります。赤色と緑色の場合は特に注意が必要です。色覚異常者は特に、この色が見えにくい人が多いです。</p>
+          <p>道標や情報を色だけに頼らないようにすることです。 これは、色が見えない人には良くないでしょう。 例えば、必須のフォームフィールドを赤でマークする代わりに、赤いアスタリスクでマークします。</p>
+          <h3>ナビゲーションを読み飛ばす為のリンク（スキップリンクス）について考える</h3>
+          <div class="imgframe">
+            <img src="img/skiplink3.png" alt="スキップリンクスの説明図" title="スキップリンクスの説明図">
+          </div>
+          <p>ナビゲーションがページの先頭にある場合、スクリーンリーダでは、ナビゲーションを読み上げてから本文に進む構成になっていると思われます。</p>
+          <p>下層ページそれぞれに同じ内容のナビゲーションが使われているのが一般的であり、サイト内を移動するたびごとに、長々と同じ音声アナウンスを聞くことになります。</p>
+          <p>スクリーンリーダー利用者に対してこのような煩わしさを取り除く為に、「スキップリンクスSkiplinks」というWebアクセシビリティのテクニックが使われる場合があります。これは、以下の条件を満たすようなhtml・cssコーディングによって実現するとされております。</p>
+          <ul>
+            <li>html bodyの先頭部分にリンク元となる「a href」タグを設置する。</li>
+            <li>リンク先はナビゲーション部分を飛び越え、本文の始まり部分の任意のタグ内に、リンク元に紐づけられたid要素を設置する。</li>
+            <li>リンク元をdivタグで囲み、id属性をつける。</li>
+            <li>リンク元を指す、id属性に対してスタイルシートを記述する。但し、スクリーンリーダにはその存在が認識できても、それを必要としないページ閲覧者には見えないcssコーディング設定をしなければならない。</li>
+            <li>具体的には、display:noneやvisibility:hiddenでは読み上げの対象とはされていないので使うべきではないが、display: absoluteとleft: -10000pxで画面の外に吐き出す設定により、スクリーンリーダーが認識してくれるようである。</li>
+          </ul>
+            <pre class="mycode"><code><span class="yellow">ページの先頭付近にスキップリンクを設置します</span>
+<span class="bg-white">html</span>
+  &lt;!-- ヘッダ --&gt;
+&lt;header class=&quot;h-container&quot;&gt;
+  &lt;p id=&quot;site-intro&quot;&gt;誰でも利用しやすいウェッブサイト製作について考えるサイト&lt;/p&gt;
+  &lt;div id=&quot;skip&quot;&gt;&lt;a href=&quot;#content&quot;&gt;Skip to Main Content&lt;/a&gt;&lt;/div&gt;
+    &lt;!-- ナビゲーション  --&gt;
+  &lt;div class=&quot;breadcrumb&quot; id=&quot;content&quot; aria-label=&quot;breadcrumb&quot;&gt;
+
+<span class="bg-white">css</span>
+#skip a {
+position:absolute;
+left:-10000px;
+top:auto;
+width:1px;
+height:1px;
+overflow:hidden;
+}
+#skip a:focus {
+position:static;
+width:auto;
+height:auto;
+}
+            </code></pre>
+
+        </section>
+        <section>
+          <h2>WAI-ARIA（ウェイ・アリア）の利用</h2>
+          <p>WAI-ARIA(Web Accessibility Initiative - Accessible Rich Internet Applications)とは、HTMLやSVGでは表現できない、アクセスビリティ向上のための追加的なW3Cの仕様です。
+          </p>
+          <section>
+            <h3 id="sendform">フォーム送信</h3>
+            <p>フォーム画面を操作する場合に、項目を選択・記入後送信ボタンを押していきなり送信してしまうような事は、ユーザには、親切であるとはいえません。</p>
+            <p>使い勝手を考えた場合、以下の手順で操作できることが求められるとおもいます。</p>
+            <ol>
+              <li>ユーザーが項目を選択し送信ボタンを押す</li>
+              <li>必須項目が未選択や条件を満たさない記入に対して、警告表示をする（バリデーション）</li>
+              <li>バリデーションで通過したものを再度、確認画面表示で送信確認をする</li>
+              <li>送信ボタンとやり直しボタンのどちらかの動作を選択することになり、送信ボタンを押すとデータがサーバーに送られ、やり直しボタンはフォーム画面に戻ることになる</li>
+            </ol>
+            <p>バリデーションは操作ユーザのブラウザで行われる事が一般的になっております。</p>
+            <p>以前はこの処理をjavascriptまたはサーバー側でのプログラミング処理を使って行っておりましたが、html5が使われ始めて以降、inputタグのtype属性の指定により入力データの妥当性チェックや入力補完がタイプごとに行えるようになってきております。
+</p>
+            <article>
+              <h4>非推奨フォーム</h4>
+              <form action="" method="post">
+                <p>
+                お名前：
+                  <input type="text" name="myname1"><br>
+                メールアドレス：
+                  <input type="text" name="myemail1"><br>
+                性別：
+                  <input type="radio" name="mysex1" value="male">男性
+                  <input type="radio" name="mysex1" value="female">女性<br>
+                好きな色：
+                  <input type="checkbox" name="mycolor1" value="white">白
+                  <input type="checkbox" name="mycolor1" value="blue">青
+                  <input type="checkbox" name="mycolor1" value="green">緑
+                  <input type="checkbox" name="mycolor1" value="brack">黒
+                  <input type="checkbox" name="mycolor1" value="yellow">黄色<br>
+
+                  <input type="submit" value="送信">
+                </p>
+              </form>
+              <pre class="mycode"><code><span class="yellow">アクセスビリティを欠いた非推奨フォーム</span>
+<span class="bg-white">html</span>
+&lt;form action=&quot;&quot; method=&quot;post&quot;&gt;
+  &lt;p&gt;
+    お名前：
+    &lt;input type=&quot;text&quot; name=&quot;myname1&quot;&gt;&lt;br&gt;
+    メールアドレス：
+    &lt;input type=&quot;text&quot; name=&quot;myemail1&quot;&gt;&lt;br&gt;
+    性別：
+    &lt;input type=&quot;radio&quot; name=&quot;mysex1&quot; value=&quot;male&quot;&gt;男性
+    &lt;input type=&quot;radio&quot; name=&quot;mysex1&quot; value=&quot;female&quot;&gt;女性&lt;br&gt;
+    好きな色：
+    &lt;input type=&quot;checkbox&quot; name=&quot;mycolor1&quot; value=&quot;white&quot;&gt;白
+    &lt;input type=&quot;checkbox&quot; name=&quot;mycolor1&quot; value=&quot;blue&quot;&gt;青
+    &lt;input type=&quot;checkbox&quot; name=&quot;mycolor1&quot; value=&quot;green&quot;&gt;緑
+    &lt;input type=&quot;checkbox&quot; name=&quot;mycolor1&quot; value=&quot;brack&quot;&gt;黒
+    &lt;input type=&quot;checkbox&quot; name=&quot;mycolor1&quot; value=&quot;yellow&quot;&gt;黄色&lt;br&gt;
+
+    &lt;input type=&quot;submit&quot; value=&quot;送信&quot;&gt;
+  &lt;/p&gt;
+&lt;/form&gt;
+</code></pre>
+            </article>
+            <article>
+              <h4>html5仕様フォーム</h4>
+              <div class="errors2">
+                <ul>
+
+                </ul>
+              </div>
+              <div id="confirm">
+                <ul>
+
+                </ul>
+              </div>
+              <form action="" method="post" id="form11">
+
+                  <fieldset>
+                    <legend>名前入力（必須）</legend>
+                    <label for="myname2">お名前</label>
+                    <input type="text" name="myname2" id="myname2" required>
+                  </fieldset>
+                  <fieldset>
+                    <legend>メールアドレス入力</legend>
+                    <label for="myemail2">メールアドレス</label>
+                    <input type="email" name="myemail2" id="myemail2" placeholder="必須ではありません。">
+                  </fieldset>
+                  <fieldset>
+                    <legend id="sexlabel">性別選択（必須）</legend>
+                    <input type="radio" name="mysex2" id="mymale2" value="mymale2">
+                    <label for="mymale2">男性</label><br>
+                    <input type="radio" name="mysex2" id="myfemale2" value="myfemale2">
+                    <label for="myfemale2">女性</label>
+                  </fieldset>
+                  <fieldset>
+                    <legend>好きな色選択（複数選択可能）</legend>
+                    <input type="checkbox" name="mycolor2" id="white2" value="white2">
+                    <label for="white2">白</label>
+                    <input type="checkbox" name="mycolor2" id="blue2" value="blue2">
+                    <label for="blue2">青</label>
+                    <input type="checkbox" name="mycolor2" id="green2" value="green2">
+                    <label for="green2">緑</label>
+                    <input type="checkbox" name="mycolor2" id="black2" value="black2">
+                    <label for="black2">黒</label>
+                    <input type="checkbox" name="mycolor2" id="yellow2" value="yellow2">
+                    <label for="yellow2">黄</label>
+                  </fieldset>
+                  <button type="submit">送信</button>
+
+              </form>
+              <pre class="mycode"><code><span class="yellow">html5を使ったフォーム</span>
+<span class="bg-white">html</span>
+&lt;div class=&quot;errors2&quot;&gt;
+  &lt;ul&gt;
+    &lt;!-- ここにエラー画面をjavascriptを使って、動的に生成します --&gt;
+  &lt;/ul&gt;
+&lt;/div&gt;
+&lt;div id=&quot;confirm&quot;&gt;
+  &lt;ul&gt;
+    &lt;!-- 確認画面の固定表示をjavascriptを使って、動的に生成します --&gt;
+  &lt;/ul&gt;
+&lt;/div&gt;
+&lt;form action=&quot;&quot; method=&quot;post&quot; id=&quot;form11&quot;&gt;
+  &lt;fieldset&gt;
+    &lt;legend&gt;名前入力（必須）&lt;/legend&gt;
+    &lt;label for=&quot;myname2&quot;&gt;お名前&lt;/label&gt;
+    &lt;input type=&quot;text&quot; name=&quot;myname2&quot; id=&quot;myname2&quot; required&gt;
+  &lt;/fieldset&gt;
+  &lt;fieldset&gt;
+    &lt;legend&gt;メールアドレス入力&lt;/legend&gt;
+    &lt;label for=&quot;myemail2&quot;&gt;メールアドレス&lt;/label&gt;
+    &lt;input type=&quot;email&quot; name=&quot;myemail2&quot; id=&quot;myemail2&quot; placeholder=&quot;必須ではありません。&quot;&gt;
+  &lt;/fieldset&gt;
+  &lt;fieldset&gt;
+    &lt;legend id=&quot;sexlabel&quot;&gt;性別選択（必須）&lt;/legend&gt;
+    &lt;input type=&quot;radio&quot; name=&quot;mysex2&quot; id=&quot;mymale2&quot; value=&quot;mymale2&quot;&gt;
+    &lt;label for=&quot;mymale2&quot;&gt;男性&lt;/label&gt;&lt;br&gt;
+    &lt;input type=&quot;radio&quot; name=&quot;mysex2&quot; id=&quot;myfemale2&quot; value=&quot;myfemale2&quot;&gt;
+    &lt;label for=&quot;myfemale2&quot;&gt;女性&lt;/label&gt;
+  &lt;/fieldset&gt;
+  &lt;fieldset&gt;
+    &lt;legend&gt;好きな色選択（複数選択可能）&lt;/legend&gt;
+    &lt;input type=&quot;checkbox&quot; name=&quot;mycolor2&quot; id=&quot;white2&quot; value=&quot;white2&quot;&gt;
+    &lt;label for=&quot;white2&quot;&gt;白&lt;/label&gt;
+    &lt;input type=&quot;checkbox&quot; name=&quot;mycolor2&quot; id=&quot;blue2&quot; value=&quot;blue2&quot;&gt;
+    &lt;label for=&quot;blue2&quot;&gt;青&lt;/label&gt;
+    &lt;input type=&quot;checkbox&quot; name=&quot;mycolor2&quot; id=&quot;green2&quot; value=&quot;green2&quot;&gt;
+    &lt;label for=&quot;green2&quot;&gt;緑&lt;/label&gt;
+    &lt;input type=&quot;checkbox&quot; name=&quot;mycolor2&quot; id=&quot;black2&quot; value=&quot;black2&quot;&gt;
+    &lt;label for=&quot;black2&quot;&gt;黒&lt;/label&gt;
+    &lt;input type=&quot;checkbox&quot; name=&quot;mycolor2&quot; id=&quot;yellow2&quot; value=&quot;yellow2&quot;&gt;
+    &lt;label for=&quot;yellow2&quot;&gt;黄&lt;/label&gt;
+  &lt;/fieldset&gt;
+  &lt;button type=&quot;submit&quot;&gt;送信&lt;/button&gt;
+&lt;/form&gt;
+
+<span class="bg-white">css</span>
+form {
+  padding: 5%;
+}
+button {
+  margin: 2%;
+}
+.errors2 {
+  color: red;
+  font-weight: bold;
+  padding: 1%;
+  width: 90%;
+  position: fixed;
+  left: -2000px;
+}
+#confirm {
+  font-weight: bold;
+  list-style: none;
+  padding: 1%;
+  width: 300px;
+  border-radius: 20px;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+<span class="bg-white">javascript</span>
+const form11 = document.querySelector('#form11');
+form11.addEventListener("submit", form11Submit);
+
+// エラー送信文を保持・操作する関数式
+const errorstrFunc = () =&gt; {
+    const errorstrs = [];
+    function addstrFunc(str) {
+        errorstrs.push(str);
+    }
+    function getstrsFunc() {
+        return errorstrs;
+    }
+    function initstrsFunc() {
+        errorstrs.length = 0;
+    }
+    return {
+        addstr: addstrFunc,
+        getstrs: getstrsFunc,
+        init: initstrsFunc
+    };
+}
+const staticErrorstrFunc = errorstrFunc();
+
+// 送信データを保持・操作する関数式
+const senddtFunc = () =&gt; {
+    const sendmap = new Map();
+    function setmapFunc(key, value) {
+        sendmap.set(key, value);
+    }
+    function getmapFunc() {
+        return sendmap;
+    }
+    return {
+        setmap: setmapFunc,
+        getmap: getmapFunc
+    };
+}
+const staticSenddtFunc = senddtFunc();
+
+// エラー情報表示リセットする関数式
+const errordispFunc = () =&gt; {
+    const errorField = document.querySelector(".errors2");
+    const errorList = document.querySelector(".errors2 ul");
+    function resetFunc() {
+        while (errorList.firstChild) {
+            errorList.removeChild(errorList.firstChild);
+        }
+        errorField.style.position = "";
+        errorField.style.left ="";
+        staticErrorstrFunc.init();
+    }
+    function dispFunc() {
+        const errorstrs = staticErrorstrFunc.getstrs();
+        for (i = 0; i &lt; errorstrs.length; i++) {
+        const listItem = document.createElement("li");
+        listItem.textContent = errorstrs[i];
+        errorList.appendChild(listItem);
+        }
+        errorField.style.position = "static";
+        errorField.style.left ="20px";
+    }
+    return {
+        reset: resetFunc,
+        disp: dispFunc
+    };
+}
+const staticErrordispFunc = errordispFunc();
+
+// 送信データ確認画面表示関数式
+const senddtDispFunc = () =&gt; {
+    const sendmap = staticSenddtFunc.getmap();
+    // 入力データ表示作成
+    const target = document.getElementById("confirm");
+    const itemp = document.createElement("p");
+    itemp.textContent = "入力データ";
+    target.appendChild(itemp);
+
+    for (const [key, value] of sendmap.entries()) {
+        const itemli = document.createElement("li");
+        itemli.textContent = key + value;
+        target.appendChild(itemli);
+    }
+
+    // 送信ボタン作成
+    const item_submitbtn = document.createElement("button");
+    item_submitbtn.type = "submit";
+    item_submitbtn.textContent = "送信する";
+    target.appendChild(item_submitbtn);
+    item_submitbtn.addEventListener("click", function() {
+        // サーバにおけるサーバ処理へ
+//      form11.submit();
+    });
+
+    // リセットボタン作成
+    const item_resetbtn = document.createElement("button");
+    item_resetbtn.type = "reset";
+    item_resetbtn.textContent = "やり直す";
+    target.appendChild(item_resetbtn);
+    target.style.background = "LightSkyBlue";
+    // 入力データ表示画面のリセット処理
+    item_resetbtn.addEventListener("click", function() {
+        while (target.firstChild) {
+            target.removeChild(target.firstChild);
+        }
+        target.style.background = "";
+        form11.reset();
+    });
+}
+
+// フォーム送信データ処理メイン
+function form11Submit(event) {
+    // リセット処理
+    if (staticErrorstrFunc.getstrs().length &gt; 0) {
+        staticErrordispFunc.reset();
+    }
+    // 送信データname別振り分け処理
+    const inputs = form11.querySelectorAll("input");
+    const labels = form11.querySelectorAll("label");
+    const checked_mycolor2 = [];
+    let checked_mysex2 = "";
+    for (let i = 0; i &lt; inputs.length; i++) {
+        switch (inputs[i].name) {
+            case "myname2":
+                myname2(inputs[i]);
+                break;
+            case "myemail2":
+                myemail2(inputs[i]);
+                break;
+            case "mysex2":  // type=radio
+                if (inputs[i].checked) {
+                    checked_mysex2 = inputs[i]
+                }
+                break;
+            case "mycolor2": // type=checkbox.
+                if (inputs[i].checked) {
+                    checked_mycolor2.push(inputs[i]);
+                }
+            default:
+        }
+    }
+    mysex2(checked_mysex2);
+   // mycolor2チェックボックス送信データのテキスト文をピックアップする
+    const values = [];
+    for (i = 0; i &lt; checked_mycolor2.length; i++) {
+        for (let j = 0; j &lt; labels.length; j++) {
+            if (checked_mycolor2[i].id == labels[j].htmlFor) {
+                values.push(labels[j].textContent);
+            }
+        }
+    }
+    mycolor2(values);
+
+    // 表示処理
+    const error = staticErrorstrFunc.getstrs();
+    if (error.length &gt; 0) {
+        staticErrordispFunc.disp();
+    } else {
+        senddtDispFunc();
+    }
+    event.preventDefault();
+}
+
+// お名前バリデェーションチェック
+function myname2(nObj) {
+    const MAX = 30;
+    const MIN = 2;
+    if (nObj.value.length &lt; MIN || nObj.value.length &gt; MAX) {
+        staticErrorstrFunc.addstr("お名前は２字以上３０字以内でご記入ください");
+        nObj.style.background = "yellow";
+        nObj.focus();
+    } else {
+        nObj.style.background = "";
+        staticSenddtFunc.setmap(" お名前：", nObj.value);
+    }
+}
+
+// メールアドレスバリデェーションチェック
+function myemail2(nObj) {
+    staticSenddtFunc.setmap(" メールアドレス：", nObj.value);
+}
+
+// 性別選択(ラジオボタン)バリデェーションチェック
+function mysex2(nObj) {
+    const sexmap = new Map([["mymale2", "男性"], ["myfemale2", "女性"]]);
+    const sexlabel = document.getElementById("sexlabel");
+    if ((nObj.value == "mymale2") || (nObj.value == "myfemale2")) {
+        sexlabel.style.background = "white";
+        staticSenddtFunc.setmap(" 性別：", sexmap.get(nObj.value));
+    } else {
+        staticErrorstrFunc.addstr("性別選択にチェックを入れてください");
+        sexlabel.style.background = "yellow";
+    }
+}
+
+// 好きな色選択(複数選択可能チェックボックス)バリデェーションチェック
+function mycolor2(checkedvalues) {
+    let checkedstr = "";
+    for (let i = 0; i &lt; checkedvalues.length; i++) {
+        checkedstr = checkedstr + checkedvalues[i] + " ";
+    }
+    staticSenddtFunc.setmap(" 色選択：", checkedstr);
+}
+</code></pre>
+              <p>非推奨フォームでは、lableタグ、for属性を使っていない為に、フォーム内の項目名がスクリーンリーダでは読み上げられません。
+              </p>
+              <p>html5フォームではアクセスビリティを上げる為に、以下のように修正いたしました。</p>
+              <ul>
+                <li>各項目にlegendタグを追加し具体的な操作説明文をつける。ユーザが項目を記入する前に説明文が表示される。また、この説明文はスクリーンリーダで、読み上げられる。</li>
+                <li>lalelタグとその属性としてforを定義し、項目と関連づける。スクリーンリーダで項目名が読み上げられる。</li>
+                <li>フォーム部品にrequired属性をつけることで必須項目が未記入で送信ボタンを押したときに、未記入警告表示され、スクリーンリーダでアナウンスされる。送信されない。</li>
+                <li>メールアドレス入力inputタグのtype属性にemailを使用する。これにより、メールアドレスにふさわしくない記入に対して、警告表示され、スクリーンリーダでアナウンスされる。送信されない。</li>
+                <li>メールアドレス入力欄にinputタグのplaceholder属性を使って、入力補助に係わる表示を入れる。スクリーンリーダではアナウンスされない場合がある。</li>
+                <li>フォーム表示画面スクロール手前に、javascriptのdom操作で動的に生成させる、エラー画面と確認画面の領域をulタグで確保する。</li>
+              </ul>
+              <p>以上のようにすることで、ずいぶん扱いやすくなりました。但し、送信ボタンを押したのちのエラー画面や確認画面に対してはスクリーンリーダでは音声として機能しないことに気づかされます。</p>
+              <p>このことを実現させる為には、以下に示す WAI-ARIA の記述が必要になってきます。</p>
+            </article>
+            <article>
+              <h4>WAI-ARIA仕様フォーム</h4>
+              <div class="errors3" aria-live="assertive" aria-atomic="true">
+                <ul>
+
+                </ul>
+              </div>
+              <div id="confirm3" aria-live="assertive" aria-atomic="true">
+                <ul>
+
+                </ul>
+              </div>
+              <form action="" method="post" id="form12">
+
+                  <fieldset>
+                    <legend>名前入力（必須）</legend>
+                    <label for="myname3">お名前</label>
+                    <input type="text" name="myname3" id="myname3" aria-required="true">
+                  </fieldset>
+                  <fieldset>
+                    <legend>メールアドレス入力</legend>
+                    <label for="myemail3">メールアドレス</label>
+                    <input type="email" name="myemail3" id="myemail3" placeholder="必須ではありません。" aria-label="必須ではありません。">
+                  </fieldset>
+                  <fieldset>
+                    <legend id="sexlabel2">性別選択</legend>
+                    <input type="radio" name="mysex3" id="mymale3" value="mymale3">
+                    <label for="mymale3">男性</label><br>
+                    <input type="radio" name="mysex3" id="myfemale3" value="myfemale3">
+                    <label for="myfemale3">女性</label>
+                  </fieldset>
+                  <fieldset>
+                    <legend>好きな色選択（複数選択可能）</legend>
+                    <input type="checkbox" name="mycolor3" id="white3" value="white3">
+                    <label for="white3">白</label>
+                    <input type="checkbox" name="mycolor3" id="blue3" value="blue3">
+                    <label for="blue3">青</label>
+                    <input type="checkbox" name="mycolor3" id="green3" value="green3">
+                    <label for="green3">緑</label>
+                    <input type="checkbox" name="mycolor3" id="black3" value="black3">
+                    <label for="black3">黒</label>
+                    <input type="checkbox" name="mycolor3" id="yellow3" value="yellow3">
+                    <label for="yellow3">黄</label>
+                  </fieldset>
+
+                  <button type="submit" title="送信ボタンです。ボタンをクリックすると確認またはエラー画面が現れます">送信</button>
+
+              </form>
+<pre class="mycode"><code><span class="yellow">WAI-ARIAを使ったhtml5準拠コーディング</span>
+<span class="bg-white">html</span>
+&lt;div class="errors3" aria-live="assertive" aria-atomic="true"&gt;
+  &lt;ul&gt;
+    &lt;!-- ここにエラー画面をjavascriptを使って、動的に生成します --&gt;
+  &lt;/ul&gt;
+&lt;/div&gt;
+&lt;div id="confirm3" aria-live="assertive" aria-atomic="true"&gt;
+  &lt;ul&gt;
+    &lt;!-- 確認画面の固定表示をjavascriptを使って、動的に生成します --&gt;
+  &lt;/ul&gt;
+&lt;/div&gt;
+&lt;form action="" method="post" id="form12"&gt;
+  &lt;fieldset&gt;
+    &lt;legend&gt;名前入力（必須）&lt;/legend&gt;
+    &lt;label for="myname3"&gt;お名前&lt;/label&gt;
+    &lt;input type="text" name="myname3" id="myname3" aria-required="true"&gt;
+  &lt;/fieldset&gt;
+  &lt;fieldset&gt;
+    &lt;legend&gt;メールアドレス入力&lt;/legend&gt;
+    &lt;label for="myemail3"&gt;メールアドレス&lt;/label&gt;
+    &lt;input type="email" name="myemail3" id="myemail3" placeholder="必須ではありません。" aria-label="必須ではありません。"&gt;
+  &lt;/fieldset&gt;
+  &lt;fieldset&gt;
+    &lt;legend id="sexlabel2"&gt;性別選択&lt;/legend&gt;
+    &lt;input type="radio" name="mysex3" id="mymale3" value="mymale3"&gt;
+    &lt;label for="mymale3"&gt;男性&lt;/label&gt;&lt;br&gt;
+    &lt;input type="radio" name="mysex3" id="myfemale3" value="myfemale3"&gt;
+    &lt;label for="myfemale3"&gt;女性&lt;/label&gt;
+  &lt;/fieldset&gt;
+  &lt;fieldset&gt;
+    &lt;legend&gt;好きな色選択（複数選択可能）&lt;/legend&gt;
+    &lt;input type="checkbox" name="mycolor3" id="white3" value="white3"&gt;
+    &lt;label for="white3"&gt;白&lt;/label&gt;
+    &lt;input type="checkbox" name="mycolor3" id="blue3" value="blue3"&gt;
+    &lt;label for="blue3"&gt;青&lt;/label&gt;
+    &lt;input type="checkbox" name="mycolor3" id="green3" value="green3"&gt;
+    &lt;label for="green3"&gt;緑&lt;/label&gt;
+    &lt;input type="checkbox" name="mycolor3" id="black3" value="black3"&gt;
+    &lt;label for="black3"&gt;黒&lt;/label&gt;
+    &lt;input type="checkbox" name="mycolor3" id="yellow3" value="yellow3"&gt;
+    &lt;label for="yellow3"&gt;黄&lt;/label&gt;
+  &lt;/fieldset&gt;
+  &lt;button type="submit" title="送信ボタンです。ボタンをクリックすると確認またはエラー画面が現れます"&gt;送信&lt;/button&gt;
+&lt;/form&gt;
+
+<span class="bg-white">css</span>
+form {
+  padding: 5%;
+}
+button {
+  margin: 2%;
+}
+
+.errors3 {
+  color: red;
+  font-weight: bold;
+  padding: 1%;
+  width: 90%;
+  position: fixed;
+  left: -2000px;
+}
+#confirm3 {
+  font-weight: bold;
+  list-style: none;
+  padding: 1%;
+  width: 300px;
+  border-radius: 20px;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+<span class="bg-white">javascript</span>
+<span class="yellow">id名・class名の表記以外はWAI-ARIAを使わないhtml5準拠コーディングのjavascriptと同じ</span>
+</code></pre>
+
+              <p>WAI-ARIA は W3C によって定められた仕様で、htmlやjavascriptのdom操作だけでは実現できないアクセスビリティ向上技術を要素に適用したものです。</p>
+              <p>この仕様では、主に次の3つの機能があります</p>
+              <dl>
+                <dt>ロール（Role）</dt>
+                <dd>htmlの要素に「この文はどういう文なのか」という意味を表すものです。html5登場前はheader main footerなどのセマンティックなタグは無く、divタグで括られたものだったので、このタグに意味論的な要素を追加するのに有用であると思われていました。html5ではセマンティックな要素を使用すれば特にRoleとして規定する必要性は無いようです。但し、role="banner" role="search"などは、これらに含まれていない為に、使用価値は見出せることでしょう。</dd>
+                <dt>プロパティ（Property）</dt>
+                <dd>要素の追加的性質や値を定義します。、たとえば、aria-label または、aria-labelledbyは画像などの説明文を値またはラベルとしてセットして、スクリーンリーダで読み上げられるようにしたものです。alt属性と同様の役割を持ちますが、これらは、長い説明文や、複数の画像に対して同じラベルとして動作させることを可能にするという違いがあります。</dd>
+                <dt>ステート（State）</dt>
+                <dd>要素の現在の状態を定義するプロパティです。但し、上記のプロパティは一度定義すれば動的に変更できないものであるのに対して、ステートはdomをプログラミング操作することにより、動的に値を変化させることができるものを指します。チェックボックス要素で予めチェックをつけておきたい項目にaria-checked="true"とするようなものはこの分類に属します。</dd>
+              </dl>
+              <p>ここでは、送信ボタンを押した後の表示動作に対して、スクリーンリーダーなどでも認識できるようにするために以下のようなWAI-ARIAタグを使用しております。</p>
+              <pre class="mycode"><code>
+<span class="bg-white">html</span>
+&lt;div class="errors3" aria-live="assertive" aria-atomic="true"&gt;
+  &lt;ul&gt;
+    &lt;!-- ここにエラー画面をjavascriptを使って、動的に生成します --&gt;
+  &lt;/ul&gt;
+&lt;/div&gt;
+&lt;div id="confirm3" aria-live="assertive" aria-atomic="true"&gt;
+  &lt;ul&gt;
+    &lt;!-- 確認画面の固定表示をjavascriptを使って、動的に生成します --&gt;
+  &lt;/ul&gt;
+&lt;/div&gt;
+              </code></pre>
+              <p>aria-liveは何らかの更新表示により、それをユーザにしらせるかどうかのwai-aria属性です。assertiveは即座に伝えるということを意味しています。aria-atomicはこの更新表示により、変更部分だけを伝えるか、属性が定義されているタグの範囲全体を伝えるかを設定します。trueは後者になります。</p>
+
+<pre class="mycode"><code><span class="bg-white">html</span>
+&lt;input type=&quot;text&quot; name=&quot;myname3&quot; id=&quot;myname3&quot; aria-required=&quot;true&quot;&gt;</code></pre>
+              <p>aria-required="true"は音声ブラウザに入力必須であることを伝えます。html5inputタグのrequired属性と同じような役割をします。但し、html5のrequired属性は空欄の場合はツールチップで警告表示が出ることがあります。どちらかを使えばいいでしょう。javascriptでこの項目の細かいバリデーションをするときは、ariaを使ったほうが良いようです。</p>
+<pre class="mycode"><code><span class="bg-white">html</span>
+&lt;input type=&quot;email&quot; name=&quot;myemail3&quot; id=&quot;myemail3&quot; placeholder=&quot;必須ではありません。&quot; aria-label=&quot;必須ではありません。&quot;&gt;
+</code></pre>
+<p>placeholderは項目の内容に追加的な説明を加えるのに適しております。スクリーンリーダではこの説明を読み上げてくれない場合があるので、aria-label属性を追加して、読み上げられるようにしました。</p>
+<pre class="mycode"><code><span class="bg-white">javascript</span>
+slideshow.setAttribute('aria-lable', slidetext.textContent);
+</code></pre>
+<p>javascript dom関連のメソッドである、setAttributeでaria-lable属性を動的に生成しております。</p>
+            </article>
+          </section>
+          <article>
+            <h3>スライドショー</h3>
+            <p>自動的に画像が推移するスライドショーや動画などは、近頃のウェブサイトでは当たり前になってきています。
+障害者や高齢者に優しいサイトであるために、最低限以下のようなものであるべきだと考えます。</p>
+            <ul>
+              <li>字幕をつける</li>
+              <li>そして、それが音声で読み上げられる</li>
+              <li>開始・停止ボタンがある</li>
+              <li>音量調整が出来る</li>
+            </ul>
+            <p>ここでは、javascriptでのdom操作によって、スライドショーを題材として、取り上げました。</p>
+            <div class="sliderbox">
+              <img src="" alt="" title="" id="slideshow" aria-live="polite" aria-atomic="true">
+              <p id="slidetext" tabindex="0"></p>
+              <input type="button" value="開始／停止" id="startstopbtn" title="スライドの停止開始ボタンです。開始ボタンを押すと８秒後に始まります。">
+            </div>
+
+            <pre class="mycode"><code><span class="yellow">WAI-ARIAを使ったコーディング</span>
+<span class="bg-white">html</span>
+&lt;div class="sliderbox"&gt;
+  &lt;img src="your_img_dir/season.png" alt="季節の画像集" title="季節の画像集" id="slideshow" aria-live="assertive" aria-atomic="true"&gt;
+  &lt;p id="slidetext" tabindex="0"&gt;&lt;/p&gt;
+  &lt;input type="button" value="開始／停止" id="startstopbtn" title="スライドの停止開始ボタンです"&gt;
+&lt;/div&gt;
+
+<span class="bg-white">css</span>
+.sliderbox {
+  text-align: center;
+}
+.sliderbox img {
+  display: block;
+  margin: 0 auto;
+  width: 80%;
+  max-width: 640px;
+}
+/* フェードイン */
+.fade-in {
+  opacity: 0;
+  animation-name: fade-in;
+  animation-duration: 8s;
+  animation-timing-function: ease-out;
+/* animation-direction: nomal; */
+  animation-fill-mode: none;
+  animation-iteration-count: infinite;
+}
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+    transform: translateX(0);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+<span class="bg-white">javascript</span>
+const img_dir = "your_image_dir";
+const imgs = [ // ファイル名(拡張子を除く),　代替テキスト, コメント
+    ["leafbluesky-s", "青空と葉っぱ",
+      "青空に葉っぱ、そして、シャボンが空に舞う、ファンタジックです"],
+    ["tree-s", "新緑の木",
+      "ポツンと一本、今年も葉が茂る季節が到来しました"],
+    ["tree_bluesky-s", "街はるんるん",
+      "緑の街に鳥が飛び、葉っぱが舞う音に包まれる"],
+    ["wintersnow-s", "雪の城",
+      "雪が舞い、白く輝く城がまぶしい"]
+  ];
+// 画像のプレロード
+const preloadImage = function(path) {
+  const imgTag = document.createElement('img');
+  imgTag.src = path;
+}
+for (let i = 0; i &lt; imgs.length; i++) {
+  let imgfile = img_dir + imgs[i][0] + '.png';
+  preloadImage(imgfile);
+}
+
+let scount = 0;
+const slideshow = document.getElementById("slideshow");
+const slideimage = () =&gt; {
+  if (scount &gt;= imgs.length) {
+    scount = 0;
+  }
+  const slidetext = document.getElementById("slidetext");
+  slideshow.src = img_dir + imgs[scount][0] + '.png';
+  // slideshow.alt = imgs[scount][1];
+  slideshow.title = imgs[scount][2];
+  slidetext.textContent = imgs[scount][2];
+  slideshow.setAttribute('aria-lable', slidetext.textContent);
+  slideshow.classList.add("fade-in");
+  scount++;
+}
+
+let slideid = 0;
+const startstop = () =&gt; {
+  if (slideid === 0) {
+    slideid = setInterval(slideimage, 8000);
+  } else {
+    slideshow.classList.remove("fade-in");
+    clearInterval(slideid);
+    slideid = 0;
+  }
+}
+
+// 初期画像
+slideshow.src = "your_image_url_path";
+slideshow.alt = "季節の画像集";
+slideshow.title = "季節の画像集";
+
+document.getElementById("startstopbtn").onclick = startstop;
+            </code></pre>
+            <p>画面推移の素材（画像とテキスト）はjavascriptのコードとして動的にhtmlの中に挿入しております。</p>
+            <p>アニメーション効果はcssの中のクラスとして定義し、これもjavascriptで生成しております。</p>
+            <p>前記で書かれているように、動的コンテンツは、スクリーンリーダでは認識しませんので、このままでは、利用者はスライドショーが何であるか、知りえることが出来ません。</p>
+            <p>ここでも以下のようにWAI-ARIAを利用することにより、スクリーンリーダーの音声機能が使えるようになります。</p>
+<pre class="mycode"><code><span class="bg-white">html</span>
+&lt;img src=&quot;&quot; alt=&quot;&quot; title=&quot;&quot; id=&quot;slideshow&quot; aria-live=&quot;assertive&quot; aria-atomic=&quot;true&quot;&gt;
+</code></pre>
+            <p>src alt titleの値はjavascriptにより、動的に生成されます</p>
+<pre class="mycode"><code><span class="bg-white">html</span>
+&lt;p id=&quot;slidetext&quot; tabindex=&quot;0&quot;&gt;&lt;/p&gt;
+</code></pre>
+            <p>tabindex属性はwai-area属性ではありません。この属性はtabキーでフォーカスされるタグを指定できます。数値はフォーカスの順番を示します。数値を０とすると通常タブキーでの移動対象とならない要素をタブ移動可能にします。</p>
+<pre class="mycode"><code><span class="bg-white">javascript</span>
+slideshow.setAttribute(&#x27;aria-lable&#x27;, slidetext.textContent);
+</code></pre>
+            <p>スライド画像にたいして、スクリーンリーダに読み上げてもらう為にラベルをつけています</p>
+<pre class="mycode"><code><span class="bg-white">javascript</span>
+document.getElementById(&quot;startstopbtn&quot;).onclick = startstop;
+</code></pre>
+            <p>スクリーンリーダーでも、一定の時間間隔で画像が変化するものを音声認識させる場合は、ページを開いたときには、停止ボタンが押されている状態である必要があります。</p>
+            <p>ページ内の他のコンテンツを見ているときでも、自動的に画面推移されるとそのたびに、音声アナウンスが入り、利用者が混乱してしまいます。</p>
+            <p>また、画面推移の間隔調整を適切にしないと、アナウンスのタイミングがずれたりするので、その辺を考慮したうえで製作する必要があることを認識すべきであります。</p>
+          </article>
+        </section>
+      </main>
+    </div><!-- メインコンテンツ　end -->
+
+    <!-- サブコンテンツ -->
+    <aside class="s-container">
+      <section>
+        <h2>管理人プロフィール</h2>
+        <figure>
+          <img src="./img/manager.png" alt="サイト管理人">
+          <figcaption>サイトの管理人をしている<em>レガシーひろぽよ</em>です。ホームページの製作を手がけております。趣味はジョギング・プログラミング（c java php go　など）前職は農業とロッジ経営です。長らく調理人もしていました。学校では環境問題について学んでいました。今は、脊髄損傷で障害を負ってしまった妻の介護に明け暮れる日々を送っております。ひっちゃかめっちゃかの人生なのですが？？！</figcaption>
+        </figure>
+      </section>
+      <section>
+        <h2>関連サイト</h2>
+          <ul>
+            <li><a href="https://yasashii.net/">H-Project</a></li>
+            <li><a href="https://yasashii.net/wp2/">H-Projectブログ</a></li>
+            <li><a href="https://yasashii.net/wp4/">優しい情報サイト</a></li>
+          </ul>
+      </section>
+      <section>
+        <h2>snsボタン</h2>
+        <ul class="snsbtn">
+          <li><a  href="TwitterのプロフィールURL" class="fl_tw2"><i class="fab fa-twitter"></i><span>Twitter</span></a></li>
+          <li><a href="インスタのプロフィールURL" class=" insta_btn2"><i class="fab fa-instagram"></i><span>Instagram</span></a></li>
+          <li><a href="FacebookページのURL" class="fl_fb2"><i class="fab fa-facebook-f"></i><span>Facebook</span></a></li>
+          <li><a href="https://feedly.com/i/subscription/feed/https://自分のサイトドメイン名/feed" class="fl_fd2"><i class="fas fa-rss"></i><span>Feedly</span></a></li>
+          <li><a href="https://getpocket.com/edit?url=https://自分のサイトドメイン名/" class="fl_pk2"><i class="fab fa-get-pocket"></i><span>Pocket</span></a></li>
+          <li><a href="http://b.hatena.ne.jp/add?mode=confirm&url=https://自分のサイトドメイン名" class="fl_hb2"><i class="fas fa-bold">!</i><span>Hatena</span></a></li>
+          <li><a href="youtubeのプロフィールURL" class="fl_yu2"><i class="fab fa-youtube"></i><span>YouTube</span></a></li>
+          <li><a href="https://line.me/ti/p/%ライン＠のアカウント" class="fl_li2"><i class="fab fa-line"></i><span>LINE＠</span></a></li>
+          <li><a href="お問い合わせ先のURL" class="fl_ma2"><i class="far fa-envelope"></i><span>Email</span></a></li>
+        </ul>
+      </section>
+
+    </aside><!-- サブコンテンツend -->
+  </div><!-- ラッピングend -->
+
+  <!-- フッター -->
+  <footer class="f-container">
+    <h2>サイトマップ</h2>
+    <nav class="fnav">
+      <section>
+        <h3><a href="index.html">トップページ</a></h3>
+        <ul>
+          <li><a href="index.html#1">項目1</a></li>
+          <li><a href="index.html#2">項目2</a></li>
+          <li><a href="index.html#3">項目3</a></li>
+          <li><a href="index.html#4">項目4</a></li>
+        </ul>
+      </section>
+      <section>
+        <h3><a href="contents1.html">コーディング</a></h3>
+        <ul>
+          <li><a href="contents1.html#1">項目1</a></li>
+          <li><a href="contents1.html#2">項目2</a></li>
+          <li><a href="contents1.html#3">項目3</a></li>
+          <li><a href="contents1.html#4">項目4</a></li>
+        </ul>
+      </section>
+      <section>
+        <h3><a href="contents2.html">contents2</a></h3>
+        <ul>
+          <li><a href="contents2.html#1">項目1</a></li>
+          <li><a href="contents2.html#2">項目2</a></li>
+          <li><a href="contents2.html#3">項目3</a></li>
+          <li><a href="contents2.html#4">項目4</a></li>
+        </ul>
+      </section>
+      <section>
+        <h3><a href="contents3.html">contents3</a></h3>
+        <ul>
+          <li><a href="contents3.html#1">項目1</a></li>
+          <li><a href="contents3.html#2">項目2</a></li>
+          <li><a href="contents3.html#3">項目3</a></li>
+          <li><a href="contents3.html#4">項目4</a></li>
+        </ul>
+      </section>
+      <section>
+        <h3><a href="index.html">contents4</a></h3>
+        <ul>
+          <li><a href="contents4.html#1">項目1</a></li>
+          <li><a href="contents4.html#2">項目2</a></li>
+          <li><a href="contents4.html#3">項目3</a></li>
+          <li><a href="contents4.html#4">項目4</a></li>
+        </ul>
+      </section>
+    </nav>
+
+    <div class="copyright_etc">
+      <a href="privacy.html"><p>プライバシーポリシー</p></a>
+      <small>Copyright (C)2015 by takai All right reserved.</small>
+      <a href="#site-intro"><span>　上へ</span></a>
+    </div>
+  </footer><!-- フッタend -->
+  <script src="js/form5.js"></script>
+  <script src="js/slide52.js"></script>
+</body>
+</html>
